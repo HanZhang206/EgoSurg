@@ -1,0 +1,28 @@
+# Fallback environment. On the tested stack (environment.yml, PyTorch 2.7.1)
+# FoundationStereo inference runs once TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD=1 is
+# set. Use this file only if that load still fails. These pins match the
+# upstream FoundationStereo environment (Python 3.11, torch 2.4.1).
+name: egosurg-stereo
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - torch==2.4.1
+      - torchvision==0.19.1
+      - torchaudio==2.4.1
+      - scikit-image
+      - omegaconf
+      - opencv-contrib-python
+      - timm
+      - scipy
+      - einops
+      - gdown
+      - imageio
+      - open3d
+      - transformations
+      - xformers==0.0.28.post1
+      - huggingface-hub

@@ -1,0 +1,14 @@
+# Demo training settings. Paths are CLI arguments.
+# These match the 3DGS_diffusion preset and the cfg.yml saved by the runs
+# behind the paper tables: 2000 steps and opacity_reg 0.3. Diffusion still
+# starts at step 500, with 15 views inside 0.4 m.
+method: 3DGS_diffusion
+max_steps: 2000
+save_steps: [2000]
+opacity_reg: 0.3
+difix_step: 500
+difix_n_per_cam: 15
+difix_radius: 0.4
+sh_degree: 0
+ssim_lambda: 0.2
+disable_viewer: true

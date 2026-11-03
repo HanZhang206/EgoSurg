@@ -1,0 +1,47 @@
+# Python / build
+__pycache__/
+*.py[cod]
+*$py.class
+build/
+dist/
+*.egg-info/
+.eggs/
+*.so
+.venv/
+venv/
+.env
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Third-party checkouts and weights (cloned or downloaded, never committed)
+third_party/
+pretrained_models/
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.safetensors
+
+# Data, captures, and outputs
+demo_data/
+outputs/
+results/
+*.svo
+*.svo2
+*.ply
+*.npy
+!assets/egosurg_demo/**/*.npy
+*.mp4
+*.avi
+*.mov
+
+# Tabular data stays out of git except the paper reference tables
+*.csv
+!eval/reference/*.csv
+
+# Editor
+.idea/
+.vscode/
+*.swp
+.DS_Store

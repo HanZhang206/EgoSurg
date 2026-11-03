@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "egosurg"
+version = "0.1.0"
+description = "Per-timestamp sparse-view 3D Gaussian reconstruction and egocentric rendering for operating rooms."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+
+[tool.setuptools.packages.find]
+include = ["egosurg*"]

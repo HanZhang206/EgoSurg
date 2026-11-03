@@ -1,0 +1,21 @@
+EgoSurg
+Copyright 2025 The EgoSurg Authors
+
+This product includes code adapted from gsplat
+(https://github.com/nerfstudio-project/gsplat), licensed under the Apache License 2.0.
+Files derived from the gsplat examples keep that notice in their headers.
+The gsplat library itself is a pip dependency (version 1.5.3) and is not vendored.
+
+Difix3D (https://github.com/nv-tlabs/Difix3D, commit c76edc59) and
+FoundationStereo (https://github.com/NVlabs/FoundationStereo, commit 41390d52)
+are not included in this repository. A full EgoSurg run calls those upstream
+checkouts. Their code and weights are research / non-commercial:
+
+- NVIDIA license on FoundationStereo and on Difix3D: research or evaluation
+  use only. Derivative works of that code stay under the same use limitation.
+- Stability AI Community License on the Difix weights (SD-Turbo lineage):
+  revenue cap, registration for commercial use, and attribution requirements.
+  See the upstream LICENSE files.
+
+Do not treat this repository's Apache-2.0 license as a license for those
+upstream projects or for their weights.
